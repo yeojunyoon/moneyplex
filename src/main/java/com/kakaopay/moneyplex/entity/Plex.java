@@ -11,7 +11,7 @@ import java.util.List;
 @Entity
 @Getter @Setter
 @Table(indexes = {
-        @Index(name = "unique_token_room_id_user_id", columnList = "token, roomId, ownerId", unique = true)
+        @Index(name = "unique_token_room_id_user_id_created_time", columnList = "token, roomId, ownerId, createdTime", unique = true)
 })
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Plex {
